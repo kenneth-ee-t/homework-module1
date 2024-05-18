@@ -8,6 +8,11 @@
 background: no-repeat lightgrey url(images/cliff_ocean.jpg);
 background-size: 1500px;
 }
+/* css for Cliffs page */
+#cliffs header {
+  background: no-repeat lightgrey url(images/forest_cliff.jpg);
+  background-size: 1500px;
+}
 /* css for activities page*/
 #activities header {
   background: no-repeat lightgrey url(images/runfly.jpg);
