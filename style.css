@@ -6,22 +6,22 @@
 }
 #home header {
 background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-background-size: 1500px;
+background-size: cover;
 }
 /* css for Cliffs page */
 #cliffs header {
   background: no-repeat lightgrey url(images/forest_cliff.jpg);
-  background-size: 1500px;
+  background-size: cover;
 }
 /* css for activities page*/
 #activities header {
   background: no-repeat lightgrey url(images/runfly.jpg);
-  background-size: 1500px;
+  background-size: cover;
 }
 /* css for contact page*/
 #contact header {
   background: no-repeat lightgrey url(images/cliff_rock.jpg);
-  background-size: 1500px;
+  background-size: cover;
 }
 .main-header {
 background-color: rgb(255, 255, 255, 0.8);
@@ -150,6 +150,7 @@ float: right;
 }
 footer #disclaimer p {
 clear: both;
+
 }
 footer #disclaimer p{
 font-size: 0.85em;
