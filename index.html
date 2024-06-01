@@ -48,22 +48,24 @@
     <section>
         <!--list of partners-->
         <ul id="partners">
-            <li class="partner 1">
-                <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
+            <!--<li class="partner 1">
+                <img src="images/partners/partner1.png" alt="Partner Bus Tours">
             </li>
             <li class="partner 2">
-                <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">            </li>
+                <img src="images/partners/partner2.png" alt="Partner Cabin Rental">
+            </li>
             <li class="partner 3">
-                <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">            </li>
+                <img src="images/partners/partner3.png" alt="Partner Camping Adventure">
+            </li>
             <li class="partner 4">
-                <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
+                <img src="images/partners/partner4.png" alt="Partner College Tours">
             </li>
             <li class="partner 5">
-                <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
+                <img src="images/partners/partner5.png" alt="Partner Bike Rentals">
             </li>
             <li class="partner 6">
-                <img src="images/partners/partner-tourgroup.png" alt="Partner Tou Group">
-            </li>
+                <img src="images/partners/partner6.png" alt="Partner Tou Group">
+            </li>-->
         </ul> <!--end of partner list-->
     </section>
     <footer>
@@ -98,13 +100,7 @@
             var adjTimeDiff = timeDiff < 0 ? timeDiff + 24 :timeDiff;
             var timeZone = "CST";
             //Adding 0 to single digits for seconds and minutes
-            hr = hr + adjTimeDiff;
-            if (hr >=24) {
-                if (hr >= 24) {
-                    hr = hr - 24;
-                }
-            }
-
+           
             if(sec < 10) {
                 sec = "0" +sec;
             }
@@ -117,9 +113,9 @@
                 ampm = "PM";
                 } else if (hr > 12) {
                     hr -= 12;
-                    ampm = "AM";
+                    ampm = "PM";
                 } else {
-                        ampm = "PM";                }
+                        ampm = "AM";                }
                 var time = hr + ":" + min + ":" +sec + " " + ampm + " " + timeZone;
                 document.getElementById("clock").innerText = time;
 
@@ -127,5 +123,21 @@
         }
         currentTime();
     </script>
+    <script>
+        var photos = [];
+        var fileNames = [];
+        var imageList = [];
+        var image;
+        var openList = '<li class="partner">';
+        var closeList = '</li>';
+
+            for (var i=0; i<6; i++) {
+                fileNames.push("partner"+(i+1));
+                photos.push('<img src="images/partners/'+fileNames[i]+'.png">');
+                image = openList + photos[i] +closeList;
+                imageList.push(image);
+            }
+                document.getElementById("partners").innerHTML = imageList.join(" ");
+   </script>
 </body>
 </html>
