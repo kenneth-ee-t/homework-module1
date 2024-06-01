@@ -28,7 +28,7 @@
                 </nav>
             </div><!--End of Main header-->
             <section id="timeofday">
-                <span>Your Current Local Time: </span>
+                <span>Your Current Local Time:  </span>
                 <span id="clock"></span>
             </section>
         </header>
@@ -115,7 +115,8 @@
                     hr -= 12;
                     ampm = "PM";
                 } else {
-                        ampm = "AM";                }
+                        ampm = "AM";
+                }
                 var time = hr + ":" + min + ":" +sec + " " + ampm + " " + timeZone;
                 document.getElementById("clock").innerText = time;
 
