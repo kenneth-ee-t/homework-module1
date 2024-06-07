@@ -138,10 +138,11 @@ width: 1200px;
 padding: 2em 0 2em 0;
 margin: 0 auto;
 text-align: center;
+justify-content: space-evenly;
 }
 section #partners .partner {
 display: inline-block;
-margin 0 0.75em;
+margin:0 1.75em;
 padding: 1.3em 1.5em;
 background-color: #fff;
 border-radius: 50%;
@@ -263,6 +264,7 @@ legend {
 fieldset{
   border-color: #9ed034;
   margin-bottom: 10px;
+  margin-right: 50px;
 }
 fieldset div{
   margin: 10px 30px;
@@ -290,11 +292,43 @@ width: 48%;
 text-align: right;
 }
 .button input {
-  background: #456cbb;
+  /*background: #456cbb;*/
   color: #fff;
-  border: 0;
+  border: none;
   width: 100px;
-  height: 30px;
+  height: 2.5em;
+  font-weight: bold;
   }
+  .randomcodes {
+  display: flex;
+  justify-content: right;
 
+  width: 50%;
+  margin: 0;
+  align-items: center;
+}
+.randomcodes input {
+  border: 1px solid #ffffff;
+  height: 40px;
+  margin: 5px;
+  width: 200px;
+  font-size:medium;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+#codes {
+    font-family: monospace; /* Use a monospace font for better readability */
+    color: #000;
+    align-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: 400px;
+    background-color: lightgray; /* Set background color to gray */
+    display: inline-block; /* Display as inline-block to wrap content */
+    width: 150px;
+    height: 50px;
+    padding:10px;
+    margin-left: 20px;
+}
 
