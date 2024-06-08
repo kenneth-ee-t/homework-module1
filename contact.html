@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="contact" onLoad="disableButton(true)">
+<body id="contact" onload="disableButton(true)">
     <!--Container to wrap everything on the page-->
     <div id="container">
         <header>
@@ -52,20 +51,30 @@
         <fieldset>  
             <legend>Contact Form</legend>
             <div class="textbox">
-                <label>Name:</label> 
-                <input type="text" name="name" placeholder="John Doe">  
-                <label>Email:</label>  
+                <label>First name:</label> 
+                <input type="text" name="fname" placeholder="John">
+                <label>Last name:</label> 
+                <input type="text" name="lname" placeholder="Doe">    
+                <!--<label>Email:</label>  
                 <input type="email" name="email" placeholder="johndoe@gmail.com"> 
                 <label>Phone:</label>
-                <input type="text" name="phone" placeholder="xxx-xxx-xxxx"> 
+                <input type="text" name="phone" placeholder="xxx-xxx-xxxx">--> 
             </div>
             
             <div class="radios">
-                <label>How should we contact you?</label>  
-                <input type="radio" name="contact" value="email" checked>Email 
-                <input type="radio" name="contact" value="phone">Phone
+                <label>Select your gender</label>  
+                <input type="radio" name="gender" value="male" >Male 
+                <input type="radio" name="gender" value="fmale">Female
             </div>
-        
+            <div class="selectmenu">
+                <label>How shall we contact you?</label>  
+                <select id="optionsSelect">
+                    <option value="" selected>Select One</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select>
+            </div>     
+            <div id="inputContainer"></div>   
             <div class="selectmenu">
                 <label>Which Cliff are you inquiring?</label>  
                 <select>
@@ -117,6 +126,7 @@
 <script src="js/digclock.js"></script>
 <!--Random codes-->
 <script src="js/randomcodes.js"></script>
+<script src="js/form.js"></script>
 <!--Partners-->
 <script src="js/site_scripts.js"></script>
 </body>
