@@ -334,29 +334,34 @@ text-align: right;
     padding:10px;
     margin-left: 20px;
 }
-#activities main #displaySelected {
+
+
+#displaySelected {
   visibility: hidden;
   margin: 0 auto;
   width: 600px;
   border: 2px solid #9ed034;
   padding: 0.75em;
 }
-#activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
+#displaySelected #result, #sendinfo {
   display: inline-block;
   margin: 0;
 }
 
-#activities main #result {
+#result {
   min-height: 50px;
   width: 300px;
   padding: 0;
 }
-
-#activities main #result h4 {
-  margin-bottom: 1em;
-  font-size: 15em;
+#result p {
+  padding-left: 0;
 }
 
-#activities main #displaySelected #sending input[type="email"] {
+#result h4 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+}
+
+#sending input[type="email"] {
   width: 200px;
 }
