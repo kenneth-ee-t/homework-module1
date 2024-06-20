@@ -33,6 +33,8 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("td").click(function(){ //user select a table data cell
         var content = $(this).text(); //get content of cell
+        var columnIndex =$(this).index(); //this is get column index of clicked cell
+        var rowIndex = $(this).parent().index(); //get row index of clicked cells's aprent row
 
         if (content != "Not Available") { //check if content does not contain a particular string
             $(this).toggleClass("tdhighlight"); //add or remove class when cell is selected
@@ -40,7 +42,7 @@ $(document).ready(function(){
             if ($(this).hasClass ("tdhighlight")){//check if selected cell has class
                 $('#displaySelected').css("visibility", "visible"); //make display box visbile
                 $('#displaySelected').css("margin-top", "2em"); //add spaces above display box
-                $('#result').append("<p>"+content+"</p>"); //add child element with contents of cell
+                $('#result').append("<p>"+content+" at "+$('thead tr th').eq(columnIndex).text()+"</p>"); //add child element with contents of cell
             } else {
                 //if selected cell don't have class
                 $('#result p:contains('+content+')').remove(); //remove child element
